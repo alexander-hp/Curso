@@ -1,0 +1,157 @@
+*{
+    font-family: 'Roboto Condesed', sans-serif;
+    
+}
+
+/* ?FELXBOX */
+.flex-container{
+    display: flex;
+}
+
+.flex-item{
+    background: rgb(129, 36, 36);
+    color: aliceblue;
+    margin: 10px;
+    padding: 7px; 
+}
+    /* *EJEMPLO CAJAS */
+
+    .flex-container1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flexItemN{
+        background: red;
+        margin: 5px;
+        height: 120px;
+        width: 120px;
+        font-size: 1em;
+        font-weight: 700;
+        color: wheat;
+    }
+
+    .orange{
+        background: orange;
+    }
+
+    .blue{
+        background: blue;
+    }
+
+    /* *EJEMPLO CAJAS FIN*/
+
+    /* *wrap */
+    .flex-container2{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        /* ! si queremos poner 2 propiedades */
+        flex-flow: column wrap;
+    }
+
+    .flexItem2{
+        background: red;
+        margin: 5px;
+        height: 120px;
+        /* width: 120px; */
+        min-width: 120px;
+        font-size: 1em;
+        font-weight: 700;
+        color: wheat;
+        /* *ej para que vean como si fuera un bloque */
+        /* width: 100%; */
+
+    }
+
+
+    /* *wrap fin*/
+
+    /* *JUSTIFY */
+    .flex-container3{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .flexItem3{
+        background: red;
+        margin: 5px;
+        height: 120px;
+        /* width: 120px; */
+        min-width: 120px;
+        font-size: 1em;
+        font-weight: 700;
+        color: wheat;
+    }
+
+
+    /* *JUSTIFY FIN*/
+
+    /* *Align items y container */
+
+    .flex-container4{
+        display: flex;
+        /* *ponemos wrap despues de haber visto stretch porque pondremos el container y podemos modif el wrap con sus prop*/
+        /* flex-wrap: wrap; */
+        justify-content: space-evenly;
+        height: 100vh;
+        /* ! lo sustituimos por align-content para que vean la dif entre item */
+        align-items: flex-start;
+    }
+
+    .flexItem4{
+        background: red;
+        margin: 5px;
+        /* *quitamos en flex-start o stretch 
+            * y espues lo ponemos de nievo cuando veamos el content al 
+        */
+        /* height: 120px; */
+        min-width: 120px;
+        font-size: 1em;
+        font-weight: 700;
+        color: wheat;
+    }
+
+    /* *Align items fin*/
+
+    /* *PROPIEDADES ITEMS */
+
+    .flex-container5{
+        display: flex;
+        justify-content: space-evenly;
+        height: 100vh;
+        align-items: flex-start;
+    }
+
+    /* ! para dar el ej de margin de un flex-item ponemos solo 1 caja y adentro de flexitem el margin auto
+        ! left, rigth, etc, lo que pasa ahora es que va al contrario de lo que le decimos
+    */
+    .flexItem5{
+        background: red;
+        margin: 5px;
+        height: 120px;
+        min-width: 120px;
+        font-size: 1em;
+        font-weight: 700;
+        color: wheat;
+    }
+
+    #blueBox{
+        align-self: flex-end;
+        /* *otra propiedad */
+        /* flex-basis: 200px; */
+    }
+
+    /* *PROPIEDADES ITEMS FIN*/
+
+    .orange{
+        background: orange;
+        /* * podemos poner aqui el order */
+        /* order: 4; */
+    }
+
+    .blue{
+        background: blue;
+    }
+/* ? FELXBOX FIN */

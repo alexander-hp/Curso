@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso CSS</title>
+        <!-- * style -->
+        <!-- <style>
+            body{
+                background-color: red;
+            }
+        </style> -->
+        <!-- ? relacionamos el css a esta pag -->
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="primerH1">TITULO CON H1</h1>
+        <h1 id="id1">TITULO CON H1 Segundo</h1>
+        <h2 atributo="atrib">TITULO CON H2</h2>
+        <!-- ? Con descendencia -->
+        <h3> 
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, possimus necessitatibus eum earum quae nihil commodi dolores distinctio </p>
+        </h3>
+        
+        <h3 class="claseDescendencia">
+            <a> DESCENDENCIA <small> color con descendencia </small> </a>
+        </h3>
+        <!-- ? Fin Con descendencia-->
+        <!-- ? Pseudo clase -->
+        <h2>
+            <p>Pseudo clase</p>
+        </h2>
+        <!-- ? Pseudo clase Fin -->
+
+        <!-- ? Ejemplo especificidad -->
+        <p>
+            P con especificidad
+        </p>
+
+        <b class="especificidad" atrib="espec" id="espec" style="color: darkblue;" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui itaque voluptas ducimus odio vitae aut eum! Sit debitis dolorem deserunt fuga ab aliquam cumque autem sed quisquam. Nulla, molestiae quidem. </b>
+        <!-- ? Ejemplo especificidad fin -->
+        <hr>
+
+        <!-- ? Metodologia Bem -->
+        <div class="form"> <!-- * Bloque -->
+            <input type="text" class="form__input">
+            <input type="text" class="form__input--second">
+            <input type="text" class="form__input">
+            <input type="password" class="form__input">
+        </div> <!-- * Bloque Fin-->
+        <br> <hr>
+        
+        <div class="subcribe-form"> <!-- * Bloque -->
+            <input type="text" class="subcribe-form__input">
+            <input type="text" class="subcribe-form__input--second">
+            <input type="text" class="subcribe-form__input">
+            <h2 class="subcribe-form">
+                <p class="subcribe-form__h2-p">parrafo de subscribe form</p>
+            </h2>
+            <input type="password" class="subcribe-form__input">
+        </div> <!-- * Bloque Fin-->
+        <br> <hr>
+        <!-- ? Metodologia Bem FIN-->
+
+        <!-- ? UNIDADES -->
+        <div class="unidades">
+            <h2 class="unidades__h2">Ejemplo de unidades</h2>
+        </div>
+        
+        <div class="unidades-form">
+            <h1 class="unidades-form__h2">TITULO CON EL EM MODIFICADO</h1>
+        </div>
+        <!-- ? UNIDADES FIN-->
+
+        <input type="text" value="Hola como estas?" placeholder="Placeholder">
+        <button>Texto de boton</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempora sit obcaecati! Unde quos suscipit deserunt laboriosam optio expedita nihil distinctio quas, alias commodi error reiciendis nostrum harum aspernatur iure.</p>
+    </body>
+</html>
+</html>

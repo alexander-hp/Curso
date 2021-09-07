@@ -1,0 +1,199 @@
+*{
+    font-family: Glory, sans-serif;
+    font-weight: 800;
+}
+
+/* ? PROPIEDADES DE CAJA EN LINEA */
+/* h2{
+    display: inline;
+    width: 100px;
+    height: 200px;
+} */
+
+/* ? PROPIEDADES DE CAJA DE BLOQUE */
+/* p{
+    width: 100px;
+    height: 200px;
+} */
+
+/* ?PROPIEDADES DE CAJA */
+h2{
+    background-color: rgba(172, 5, 5, 0.822);
+    display: inline-block;
+    /* *    MANECILLAS DEL RELOJ   */
+    padding: 30px;
+    /* padding: 2px 700px 2px 100px; */
+    /* padding: 10px 50px; */
+    /* *Alto*/;
+    /* height: 200px;  */
+    /** Ancho*/
+    /* width: 200px;  */
+    box-sizing: content-box;
+    /* text-align: center; */
+    margin: 10px;
+    border-radius: 10px;
+    border: 4px double blue;
+    box-shadow: 10px 5px 15px 1px blue;
+    text-shadow: 2px  3px 4px white;
+    /* 
+        *intensidad
+        text-shadow: 2px  3px 4px white, 2px  3px 4px white, 2px  3px 4px white;
+    */
+    /* transform: rotate(45deg); */
+
+}
+/* ?PROPIEDADES DE CAJA FIN*/
+
+/* ? OUTLINE */
+/* .caja1{
+    width: 250px;
+    height: 200px;
+    background: red;    
+    margin: auto; */
+    /* !esto lo comentamos */
+    /* border: 30px solid black; */
+    /* outline: 50px solid black;
+    box-sizing: content-box;
+}
+
+.caja2{
+    width: 250px;
+    height: 200px;
+    background: blue;
+    margin: auto;
+} */
+/* ? OUTLINE FIN*/
+
+/* ?POSITION */
+    /* ?esto si lo ponemos al principio */
+    /* div{
+        width: 150px;
+        height: 150px;
+        display: block;
+        color: white;
+    } */
+
+    .caja1{
+        background-color: red;
+    }
+
+    .caja2{
+        background-color: blue;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        /* bottom: 50px; */
+        /* z-index: -1; */
+    }
+    
+    .caja3{
+        background-color: black;
+        position: absolute;
+        opacity: 0.5;
+        top: 0px;
+        left: 30px;
+    }
+    
+    .caja4{
+        background-color: orangered;
+    }
+
+    /* *POSICION CON PADRE E HIJO */
+    .padre{
+        width: 300px;
+        height: 300px;
+        background: orange;
+        margin: auto;
+        margin-bottom: 20px;
+        position: relative;
+        /* z-index: -15; */
+    }
+
+    .hijo{
+        width: 100px;
+        height: 100px;
+        background: blue;
+        position: relative;
+        top: -10px;
+        left: -20px;
+        z-index: -1;
+    }
+    /* *POSICION CON PADRE E HIJO FIN*/
+
+    /* * POSICION ABSOLUTE */
+    /* ?OARA MOSTRAR EL ERROR QUITAMOS EL WIDTH Y HEIGTH DEL DIV DE ARRIBA */
+
+    /* div{
+        display: block;
+        position: absolute;
+        background: orange;
+        color: white;
+    }
+
+    div div{
+        height: 75px;
+        width: 75px;
+    }
+
+    .contenedor{ */
+        /* position: static; */ /** Se lo ponemos porque en el div le pusimos a todos el absolute */
+        /* margin: 50px auto;
+        height: 500px;
+        width: 500px;
+        border: 4px solid red;
+        position: relative;
+    }
+
+    .caja11{
+        background-color: red;
+        top: 0;
+    }
+    
+    .caja22{
+        background-color: blue;
+        right: 0;
+    }
+
+    .caja33{
+        background-color: violet;
+        bottom: 0;
+    }
+
+    .caja44{
+        background-color: black;
+        bottom: 0;
+        right: 0;
+    }
+
+    .caja55{
+        background: turquoise;
+        margin: 175px;
+        top: 0;
+        bottom: 0;
+        lefth: 0;
+        rigth: 0;
+        margin: auto;
+    } */
+
+    /* * POSICION ABSOLUTE FIN*/
+
+    /* * FIXED */
+    .box-fixed{
+        background-color: red;
+        color: black;
+        position: fixed;
+        opacity: 0.5;
+    }
+    /* * FIXED FIN*/
+
+    /* *STICKY */
+    .sticky-box{
+        color: black;
+        background: red;
+        position: sticky;
+        top: 0;
+        opacity: 0.3;
+    }
+    /* *STICKY FIN*/
+
+    /* ?POSITION FIN */
